@@ -1,3 +1,4 @@
+
 lazy val akkaHttpVersion = "10.0.9"
 lazy val akkaVersion    = "2.5.3"
 
@@ -12,6 +13,11 @@ lazy val root = (project in file(".")).
       "com.typesafe.akka" %% "akka-http"         % akkaHttpVersion,
       "com.typesafe.akka" %% "akka-http-xml"     % akkaHttpVersion,
       "com.typesafe.akka" %% "akka-stream"       % akkaVersion,
+
+      "org.slf4j" % "slf4j-api" % "1.7.22",
+      "ch.qos.logback" % "logback-classic" % "1.1.7",
+      "com.typesafe.scala-logging" %% "scala-logging" % "3.5.0",
+
       "com.typesafe.akka" %% "akka-http-testkit" % akkaHttpVersion % Test,
       "org.scalatest"     %% "scalatest"         % "3.0.1"         % Test
     )
