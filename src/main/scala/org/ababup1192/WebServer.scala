@@ -4,8 +4,7 @@ import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
 import akka.http.scaladsl.server.Directives
 import akka.stream.ActorMaterializer
-import com.example.routes.{BaseRoutes, SimpleRoutes}
-import org.ababup1192.routes.{BaseRoutes, SimpleRoutes}
+import org.ababup1192.routes.{ BaseRoutes, SimpleRoutes }
 
 import scala.io.StdIn
 
