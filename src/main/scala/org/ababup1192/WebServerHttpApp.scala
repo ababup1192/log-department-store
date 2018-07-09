@@ -47,7 +47,7 @@ object WebServerHttpApp extends HttpApp with App {
       path("info") {
         get { // Listens only to GET requests
           logger.info("infoでーす")
-          complete("warning log") // Completes with some text
+          complete("info log") // Completes with some text
 
         }
       } ~
