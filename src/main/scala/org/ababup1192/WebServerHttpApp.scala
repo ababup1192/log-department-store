@@ -11,6 +11,7 @@ import com.typesafe.scalalogging.LazyLogging
  * and it will be shutdown after pressing return.
  */
 object WebServerHttpApp extends HttpApp with LazyLogging with App {
+  println(getClass().getName())
   // Routes that this WebServer must handle are defined here
   // Please note this method was named `route` in versions prior to 10.0.7
   def routes: Route =
@@ -46,7 +47,7 @@ object WebServerHttpApp extends HttpApp with LazyLogging with App {
       } ~
       path("error") {
         get { // Listens only to GET requests
-          logger.info("errorでーす")
+          logger.error("errorでーす")
           complete("error log") // Completes with some text
 
         }
