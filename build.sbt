@@ -16,6 +16,7 @@ lazy val root = (project in file(".")).
 
       "org.slf4j" % "slf4j-api" % "1.7.22",
       "ch.qos.logback" % "logback-classic" % "1.1.7",
+      "io.spray" %%  "spray-json" % "1.3.4",
       "com.typesafe.scala-logging" %% "scala-logging" % "3.5.0",
 
       "com.typesafe.akka" %% "akka-http-testkit" % akkaHttpVersion % Test,
